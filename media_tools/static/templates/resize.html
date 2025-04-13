@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+  <input type="file" name="image" required>
+  <input type="number" name="width" placeholder="Width" required>
+  <input type="number" name="height" placeholder="Height" required>
+  <button type="submit">Resize & Compress</button>
+</form>
+{% endblock %}
